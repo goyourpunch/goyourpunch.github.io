@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mikey — Developer</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="scan-line"></div>
+
+    <!-- ═══════════════════════════
+     PAGE 1 — ABOUT
+═══════════════════════════ -->
+    <div id="page-about" class="page active">
+      <!-- CODE BACKGROUND — inside the page, z-index 0 -->
+      <canvas id="code-canvas-about" class="code-canvas"></canvas>
+      <div class="vignette"></div>
+
+      <!-- NAV -->
+      <nav>
+        <svg
+          class="nav-logo"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 205 169.2"
+          width="96"
+          height="80"
+          onclick="showPage('about')"
+        >
+          <title>Mikey — Logo</title>
+          <polygon
+            points="100,10 0,160.2 200,160.2"
+            fill="none"
+            stroke="white"
+            stroke-width="2"
+          />
+          <polygon
+            points="100,0 80,32.32 120,32.0"
+            transform="translate(0,10)"
+            fill="none"
+            stroke="white"
+            stroke-width="2"
+          />
+          <polygon
+            points="0,169.2 17.32,143.2 34.34,169.2"
+            transform="translate(1,-10)"
+            fill="none"
+            stroke="white"
+            stroke-width="2"
+          />
+          <polygon
+            points="200,170.2 182.68,143.2 165.36,170.2"
+            transform="translate(-1,-10)"
+            fill="none"
+            stroke="white"
+            stroke-width="2"
+          />
+          <path
+            d="M50,100 Q100,60 150,100 Q100,140 50,100 Z"
+            fill="none"
+            stroke="white"
+            stroke-width="2"
+          />
+          <circle
+            cx="100"
+            cy="100"
+            r="20"
+            fill="none"
+            stroke="white"
+            stroke-width="2"
+          />
+          <circle cx="100" cy="100" r="13" fill="black" />
+          <circle cx="106" cy="91" r="5" fill="white" opacity="0.9" />
+        </svg>
+        <div class="nav-links">
+          <a id="nav-about" onclick="showPage('about')" class="active-link"
+            >About</a
+          >
+          <a id="nav-contacts" onclick="showPage('contacts')">Contacts</a>
+        </div>
+      </nav>
+
+      <!-- CONTENT -->
+      <div class="about-wrapper">
+        <div class="hero-headline">
+          <h1>code is my language, <span>success</span> is my goal</h1>
+        </div>
+
+        <div class="photos-row">
+          <div class="photo-slot side left">
+            <img src="img/photo-left.png" alt="Mikey" class="hero-photo" />
+            <div class="photo-glow-bottom"></div>
+          </div>
+          <div class="photo-slot center">
+            <img src="img/photo-center.png" alt="Mikey" class="hero-photo" />
+            <div class="photo-glow-bottom"></div>
+          </div>
+          <div class="photo-slot side right">
+            <img src="img/photo-right.png" alt="Mikey" class="hero-photo" />
+            <div class="photo-glow-bottom"></div>
+          </div>
+        </div>
+
+        <div class="about-box">
+          <p>
+            I'm <strong>Mikey</strong> — 25 y.o. self-taught developer from
+            Kherson, Ukraine. I'm drawn to code because it thinks like a human:
+            every bug is visible, every logic has a reason. Unlike people — in
+            code you can <strong>read the error and fix it</strong>. Right now
+            I'm building my foundations in web development, with Python &amp; my
+            own startup ideas on the horizon. Two big projects live in my head —
+            I just need to learn enough to <strong>build them</strong>. Growing
+            step by step. No shortcuts.
+          </p>
+        </div>
+      </div>
+
+      <footer>
+        <div class="footer-copy">
+          © 2026 Mikey / goyourpunch — All rights reserved
+        </div>
+        <div class="footer-made">
+          Designed &amp; built by <span>goyourpunch</span>
+        </div>
+      </footer>
+    </div>
+
+    <!-- ═══════════════════════════
+     PAGE 2 — CONTACTS
+═══════════════════════════ -->
+    <div id="page-contacts" class="page">
+      <canvas id="code-canvas-contacts" class="code-canvas"></canvas>
+      <div class="vignette"></div>
+
+      <!-- NAV -->
+      <nav>
+        <svg
+          class="nav-logo"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 205 169.2"
+          width="96"
+          height="80"
+          onclick="showPage('about')"
+        >
+          <title>Mikey — Logo</title>
+          <polygon
+            points="100,10 0,160.2 200,160.2"
+            fill="none"
+            stroke="white"
+            stroke-width="2"
+          />
+          <polygon
+            points="100,0 80,32.32 120,32.0"
+            transform="translate(0,10)"
+            fill="none"
+            stroke="white"
+            stroke-width="2"
+          />
+          <polygon
+            points="0,169.2 17.32,143.2 34.34,169.2"
+            transform="translate(1,-10)"
+            fill="none"
+            stroke="white"
+            stroke-width="2"
+          />
+          <polygon
+            points="200,170.2 182.68,143.2 165.36,170.2"
+            transform="translate(-1,-10)"
+            fill="none"
+            stroke="white"
+            stroke-width="2"
+          />
+          <path
+            d="M50,100 Q100,60 150,100 Q100,140 50,100 Z"
+            fill="none"
+            stroke="white"
+            stroke-width="2"
+          />
+          <circle
+            cx="100"
+            cy="100"
+            r="20"
+            fill="none"
+            stroke="white"
+            stroke-width="2"
+          />
+          <circle cx="100" cy="100" r="13" fill="black" />
+          <circle cx="106" cy="91" r="5" fill="white" opacity="0.9" />
+        </svg>
+        <div class="nav-links">
+          <a onclick="showPage('about')">About</a>
+          <a onclick="showPage('contacts')" class="active-link">Contacts</a>
+        </div>
+      </nav>
+
+      <!-- CONTENT -->
+      <div class="contacts-content">
+        <div class="contacts-title">Get in touch</div>
+        <div class="contacts-subtitle">
+          // open to ideas, collabs &amp; new challenges
+        </div>
+
+        <div class="contacts-grid">
+          <a
+            class="contact-card"
+            href="https://t.me/fuck_splash"
+            target="_blank"
+          >
+            <div class="card-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="white"
+                stroke-width="1.5"
+              >
+                <path d="M21.5 3L2 10.5l7 2.5M21.5 3L14 22l-5-7M21.5 3L9 13" />
+                <path d="M9 13l2 6 3-4" />
+              </svg>
+            </div>
+            <div class="card-label">Telegram</div>
+            <div class="card-value">@fuck_splash</div>
+          </a>
+          <a
+            class="contact-card"
+            href="mailto:mykhailberezinskyi@gmail.com
+"
+            target="_blank"
+          >
+            <div class="card-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="white"
+                stroke-width="1.5"
+              >
+                <rect x="2" y="4" width="20" height="16" rx="2" />
+                <path d="M2 7l10 7 10-7" />
+              </svg>
+            </div>
+            <div class="card-label">Email</div>
+            <div class="card-value">mykhailberezinskyi@gmail.com</div>
+          </a>
+          <a
+            class="contact-card"
+            href="https://github.com/goyourpunch"
+            target="_blank"
+          >
+            <div class="card-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="white"
+                stroke-width="1.5"
+              >
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                />
+              </svg>
+            </div>
+            <div class="card-label">GitHub</div>
+            <div class="card-value">goyourpunch</div>
+          </a>
+        </div>
+
+        <div class="contacts-divider">
+          <div class="divider-line"></div>
+          <div class="divider-text">// coming soon</div>
+          <div class="divider-line"></div>
+        </div>
+
+        <div class="future-grid">
+          <div class="future-card">
+            <div class="f-title">My Skills</div>
+            <div class="f-hint">[ IN PROGRESS ]</div>
+          </div>
+          <div class="future-card">
+            <div class="f-title">Projects</div>
+            <div class="f-hint">[ IN PROGRESS ]</div>
+          </div>
+          <div class="future-card">
+            <div class="f-title">Feedback</div>
+            <div class="f-hint">[ IN PROGRESS ]</div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="footer-copy">
+          © 2026 Mikey / goyourpunch — All rights reserved
+        </div>
+        <div class="footer-made">
+          Designed &amp; built by <span>goyourpunch</span>
+        </div>
+      </footer>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
