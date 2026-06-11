@@ -1,19 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="10 5 185 160">
-  <!-- основной треугольник -->
-  <polygon points="100,10 0,160.2 200,160.2" fill="none" stroke="#cccccc" stroke-width="5"/>
-  
-  <!-- верхний маленький треугольник -->
-  <polygon points="100,10 82,40 118,40" fill="none" stroke="#cccccc" stroke-width="5"/>
-  
-  <!-- левый угол — внутри левого угла основного треугольника -->
-  <polygon points="0,160.2 28,160.2 14,136" fill="none" stroke="#cccccc" stroke-width="5"/>
-  
-  <!-- правый угол — внутри правого угла основного треугольника -->
-  <polygon points="200,160.2 172,160.2 186,136" fill="none" stroke="#cccccc" stroke-width="5"/>
-  
-  <!-- глаз -->
-  <path d="M50,100 Q100,60 150,100 Q100,140 50,100 Z" fill="none" stroke="#cccccc" stroke-width="5"/>
-  <circle cx="100" cy="100" r="20" fill="none" stroke="#cccccc" stroke-width="5"/>
-  <circle cx="100" cy="100" r="13" fill="transparent"/>
-  <circle cx="106" cy="91" r="5" fill="#cccccc"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 160">
+  <polygon points="100,10 0,160.2 200,160.2" fill="none" stroke="#cccccc" stroke-width="3.5"/>
+  <polygon points="100,10 82,42 118,42" fill="none" stroke="#cccccc" stroke-width="3.5"/>
+  <polygon points="0,160.2 30,160.2 15,134" fill="none" stroke="#cccccc" stroke-width="3.5"/>
+  <polygon points="200,160.2 170,160.2 185,134" fill="none" stroke="#cccccc" stroke-width="3.5"/>
+  <path d="M50,100 Q100,62 150,100 Q100,138 50,100 Z" fill="none" stroke="#cccccc" stroke-width="3.5"/>
+  <circle cx="100" cy="100" r="19" fill="none" stroke="#cccccc" stroke-width="3.5"/>
+  <circle cx="100" cy="100" r="11" fill="transparent"/>
+  <circle cx="105" cy="93" r="4.5" fill="#cccccc"/>
 </svg>
