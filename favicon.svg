@@ -1,10 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="-4 6 208 162">
-  <polygon points="100,10 0,160.2 200,160.2" fill="none" stroke="#cccccc" stroke-width="3"/>
-  <polygon points="100,10 78,43 122,43" fill="none" stroke="#cccccc" stroke-width="3"/>
-  <polygon points="0,160.2 22,127.2 44,160.2" fill="none" stroke="#cccccc" stroke-width="3"/>
-  <polygon points="200,160.2 178,127.2 156,160.2" fill="none" stroke="#cccccc" stroke-width="3"/>
-  <path d="M52,100 Q100,65 148,100 Q100,135 52,100 Z" fill="none" stroke="#cccccc" stroke-width="3"/>
-  <circle cx="100" cy="100" r="17" fill="none" stroke="#cccccc" stroke-width="3"/>
-  <circle cx="100" cy="100" r="9" fill="transparent"/>
-  <circle cx="105" cy="94" r="3.5" fill="#cccccc"/>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 208 168">
+  <g transform="translate(4, 0)">
+    <polygon points="100,10 0,160.2 200,160.2" fill="none" stroke="#cccccc" stroke-width="3"/>
+    <polygon points="100,10 78,43 122,43" fill="none" stroke="#cccccc" stroke-width="3"/>
+    <polygon points="0,160.2 22,127.2 44,160.2" fill="none" stroke="#cccccc" stroke-width="3"/>
+    <polygon points="200,160.2 178,127.2 156,160.2" fill="none" stroke="#cccccc" stroke-width="3"/>
+    <path d="M52,100 Q100,65 148,100 Q100,135 52,100 Z" fill="none" stroke="#cccccc" stroke-width="3"/>
+    <circle cx="100" cy="100" r="17" fill="none" stroke="#cccccc" stroke-width="3"/>
+    <circle cx="100" cy="100" r="9" fill="transparent"/>
+    <circle cx="105" cy="94" r="3.5" fill="#cccccc"/>
+  </g>
 </svg>
