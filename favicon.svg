@@ -1,13 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 205 169.2">
-  <!-- чёрный фон -->
-  <rect width="205" height="169.2" fill="black"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- фон с скруглёнными углами -->
+  <rect width="100" height="100" rx="22" fill="black"/>
   
-  <polygon points="100,10 0,160.2 200,160.2" fill="none" stroke="white" stroke-width="2"/>
-  <polygon points="100,0 80,32.32 120,32.0" transform="translate(0,10)" fill="none" stroke="white" stroke-width="2"/>
-  <polygon points="0,169.2 17.32,143.2 34.34,169.2" transform="translate(1,-10)" fill="none" stroke="white" stroke-width="2"/>
-  <polygon points="200,170.2 182.68,143.2 165.36,170.2" transform="translate(-1,-10)" fill="none" stroke="white" stroke-width="2"/>
-  <path d="M50,100 Q100,60 150,100 Q100,140 50,100 Z" fill="none" stroke="white" stroke-width="2"/>
-  <circle cx="100" cy="100" r="20" fill="none" stroke="white" stroke-width="2"/>
-  <circle cx="100" cy="100" r="13" fill="black"/>
-  <circle cx="106" cy="91" r="5" fill="white" opacity="0.9"/>
+  <!-- треугольник -->
+  <polygon points="50,8 4,88 96,88" fill="none" stroke="white" stroke-width="3.5" stroke-linejoin="round"/>
+  
+  <!-- глаз -->
+  <path d="M26,55 Q50,36 74,55 Q50,74 26,55 Z" fill="none" stroke="white" stroke-width="2.5"/>
+  
+  <!-- радужка -->
+  <circle cx="50" cy="55" r="10" fill="none" stroke="white" stroke-width="2.5"/>
+  
+  <!-- зрачок -->
+  <circle cx="50" cy="55" r="5.5" fill="black"/>
+  
+  <!-- блик -->
+  <circle cx="53" cy="51" r="2.5" fill="white"/>
 </svg>
