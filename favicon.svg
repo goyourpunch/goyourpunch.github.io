@@ -1,8 +1,17 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="10 5 185 160">
+  <!-- основной треугольник -->
   <polygon points="100,10 0,160.2 200,160.2" fill="none" stroke="#cccccc" stroke-width="5"/>
+  
+  <!-- верхний маленький треугольник -->
   <polygon points="100,0 80,32.32 120,32.0" transform="translate(0,10)" fill="none" stroke="#cccccc" stroke-width="5"/>
-  <polygon points="0,169.2 17.32,143.2 34.34,169.2" transform="translate(1,-10)" fill="none" stroke="#cccccc" stroke-width="5"/>
-  <polygon points="200,170.2 182.68,143.2 165.36,170.2" transform="translate(-1,-10)" fill="none" stroke="#cccccc" stroke-width="5"/>
+  
+  <!-- левый угол — крупнее и острее -->
+  <polygon points="0,169.2 24,130 48,169.2" transform="translate(1,-10)" fill="none" stroke="#cccccc" stroke-width="5"/>
+  
+  <!-- правый угол — крупнее и острее -->
+  <polygon points="200,169.2 176,130 152,169.2" transform="translate(-1,-10)" fill="none" stroke="#cccccc" stroke-width="5"/>
+  
+  <!-- глаз -->
   <path d="M50,100 Q100,60 150,100 Q100,140 50,100 Z" fill="none" stroke="#cccccc" stroke-width="5"/>
   <circle cx="100" cy="100" r="20" fill="none" stroke="#cccccc" stroke-width="5"/>
   <circle cx="100" cy="100" r="13" fill="transparent"/>
