@@ -277,12 +277,31 @@
             <div class="card-label">GitHub</div>
             <div class="card-value">goyourpunch</div>
           </a>
-        </div>
-
-        <div class="contacts-divider">
-          <div class="divider-line"></div>
-          <div class="divider-text">// coming soon</div>
-          <div class="divider-line"></div>
+          <div class="contact-card feedback-card">
+            <form class="feedback-form" id="contact-form">
+              <input
+                type="hidden"
+                name="access_key"
+                value="86004070-9bd9-47f5-9435-d281440d6a20"
+              />
+              <div class="feedback-card-title">Send a message</div>
+              <input type="text" name="name" placeholder="Your name" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your email"
+                required
+              />
+              <textarea
+                name="message"
+                placeholder="Your message"
+                rows="3"
+                required
+              ></textarea>
+              <button type="submit">Send message</button>
+              <div class="form-status" id="form-status"></div>
+            </form>
+          </div>
         </div>
 
         <div class="future-grid">

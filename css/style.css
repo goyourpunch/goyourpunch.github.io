@@ -178,7 +178,6 @@ nav {
   padding: 8px 20px 0;
 }
 
-/* [2] "success" более заметный */
 .hero-headline {
   flex-shrink: 0;
   text-align: center;
@@ -212,7 +211,6 @@ nav {
   letter-spacing: 4px;
 }
 
-/* photos */
 .photos-row {
   display: flex;
   align-items: flex-end;
@@ -267,8 +265,6 @@ nav {
     transform: translateY(0);
   }
 }
-
-/* [1] свечение по контуру фото при движении курсора */
 .hero-photo {
   display: block;
   width: 100%;
@@ -286,7 +282,6 @@ nav {
     drop-shadow(0 8px 32px rgba(0, 0, 0, 0.7)) brightness(1.06);
   transform: translateY(-3px);
 }
-
 .photo-glow-bottom {
   position: absolute;
   bottom: 0;
@@ -303,7 +298,6 @@ nav {
   pointer-events: none;
 }
 
-/* about box */
 .about-box {
   flex-shrink: 0;
   position: relative;
@@ -360,7 +354,7 @@ nav {
   border-width: 0 1px 1px 0;
 }
 
-/* [3][8] FOOTER — более заметный */
+/* ─── FOOTER ─── */
 footer {
   position: relative;
   z-index: 10;
@@ -402,7 +396,6 @@ footer {
   min-height: 0;
 }
 
-/* [4] заголовок и подзаголовок крупнее */
 .contacts-title {
   font-family: var(--display);
   font-size: clamp(28px, 4.5vw, 54px);
@@ -424,7 +417,6 @@ footer {
   animation: fadeDown 0.8s ease 0.4s forwards;
 }
 
-/* [5] карточки контактов — крупнее, юзернеймы читабельнее */
 .contacts-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -483,7 +475,6 @@ footer {
   text-transform: uppercase;
   color: var(--white);
 }
-/* [5] юзернеймы заметнее */
 .card-value {
   font-family: var(--mono);
   font-size: clamp(12px, 0.9vw, 14px);
@@ -492,7 +483,6 @@ footer {
   word-break: break-all;
 }
 
-/* [6] // coming soon крупнее */
 .contacts-divider {
   width: 100%;
   max-width: 820px;
@@ -521,7 +511,6 @@ footer {
   white-space: nowrap;
 }
 
-/* [7] future cards заметнее */
 .future-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -555,6 +544,64 @@ footer {
   letter-spacing: 2px;
 }
 
+/* ─── FEEDBACK FORM ─── */
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  max-width: 820px;
+  margin: 20px 0 24px;
+  opacity: 0;
+  animation: fadeUp 0.8s ease 0.7s forwards;
+}
+.feedback-form input,
+.feedback-form textarea {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  padding: 12px 16px;
+  color: white;
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: 1px;
+  outline: none;
+  transition:
+    border-color 0.3s,
+    background 0.3s;
+  resize: none;
+}
+.feedback-form input::placeholder,
+.feedback-form textarea::placeholder {
+  color: rgba(255, 255, 255, 0.25);
+}
+.feedback-form input:focus,
+.feedback-form textarea:focus {
+  border-color: rgba(255, 255, 255, 0.35);
+  background: rgba(255, 255, 255, 0.06);
+}
+.feedback-form button {
+  align-self: flex-end;
+  font-family: var(--display);
+  font-size: 10px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: white;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 4px;
+  padding: 10px 28px;
+  cursor: pointer;
+  transition:
+    background 0.3s,
+    border-color 0.3s;
+}
+.feedback-form button:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
 /* ─── RESPONSIVE TABLET ─── */
 @media (max-width: 768px) {
   nav {
@@ -568,7 +615,6 @@ footer {
 
 /* ─── RESPONSIVE MOBILE ─── */
 @media (max-width: 600px) {
-  /* NAV — логотип меньше чтобы не перекрывал заголовок */
   nav {
     padding: 10px 16px;
   }
@@ -584,7 +630,6 @@ footer {
     letter-spacing: 2px;
   }
 
-  /* CONTACTS PAGE — убираем justify-content:center, добавляем скролл только если не влазит */
   #page-contacts {
     overflow-y: auto;
   }
@@ -594,16 +639,12 @@ footer {
     padding: 12px 16px 8px;
     gap: 0;
   }
-
-  /* Заголовок */
   .contacts-title {
     font-size: clamp(22px, 8vw, 34px);
     letter-spacing: 4px;
     margin-bottom: 6px;
     text-align: center;
   }
-
-  /* Подзаголовок */
   .contacts-subtitle {
     font-size: 10px;
     letter-spacing: 2px;
@@ -612,20 +653,16 @@ footer {
     line-height: 1.5;
   }
 
-  /* Карточки — 2 колонки, симметрично, GitHub по центру */
   .contacts-grid {
     grid-template-columns: 1fr 1fr;
     gap: 10px;
     max-width: 100%;
   }
-
-  /* GitHub — 3-я карточка по центру */
   .contacts-grid .contact-card:last-child {
     grid-column: 1 / -1;
     max-width: 50%;
     justify-self: center;
   }
-
   .contact-card {
     padding: 16px 10px;
     gap: 8px;
@@ -646,7 +683,6 @@ footer {
     font-size: 11px;
   }
 
-  /* Divider */
   .contacts-divider {
     margin: 12px 0 10px;
   }
@@ -655,7 +691,6 @@ footer {
     letter-spacing: 2px;
   }
 
-  /* Future grid — 3 в ряд, компактные */
   .future-grid {
     grid-template-columns: repeat(3, 1fr);
     gap: 8px;
@@ -674,7 +709,19 @@ footer {
     letter-spacing: 1px;
   }
 
-  /* Footer */
+  .feedback-form {
+    margin: 0 0 16px;
+  }
+  .feedback-form input,
+  .feedback-form textarea {
+    font-size: 11px;
+    padding: 10px 12px;
+  }
+  .feedback-form button {
+    font-size: 9px;
+    padding: 8px 20px;
+  }
+
   footer {
     justify-content: center;
     text-align: center;
@@ -687,4 +734,36 @@ footer {
     font-size: 8px;
     letter-spacing: 1px;
   }
+}
+
+.form-status {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-align: right;
+  min-height: 18px;
+}
+
+/* ─── FEEDBACK CARD ─── */
+.feedback-card {
+  grid-column: 1 / -1;
+  padding: 24px 28px;
+  align-items: stretch;
+}
+.feedback-card-title {
+  font-family: var(--display);
+  font-size: clamp(10px, 0.8vw, 12px);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--white);
+  margin-bottom: 4px;
+}
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  margin: 0;
+  opacity: 0;
+  animation: fadeUp 0.8s ease 0.7s forwards;
 }
